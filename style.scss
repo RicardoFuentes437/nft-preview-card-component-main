@@ -1,0 +1,57 @@
+$Soft-blue: hsl(215, 51%, 70%);
+$Cyan: hsl(178, 100%, 50%);
+$Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+$Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+$Very-dark-blue-line: hsl(215, 32%, 27%);
+$White: hsl(0, 0%, 100%);
+
+.container{
+    background-color: $Very-dark-blue-main-BG;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+
+    .card{
+        width: 300px;
+        height: 460px;
+        background-color: $Very-dark-blue-card-BG;
+
+        .image-equilibrium{
+            height: 55%;
+            width: 90%;
+            padding-top: 10px;
+            align-self: center;
+            justify-self: center;
+        }
+
+        .card-body{
+            .card-title{
+                color: $White;
+            }
+
+            .card-text{
+                color: $Soft-blue;
+            }
+
+            .price{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+
+                .eth{
+                    color: $Cyan;
+                }
+
+                .days-left{
+                    color: $Soft-blue;
+                }
+            }
+        }
+
+        .card-footer{
+            color: $Soft-blue;
+        }
+    }
+}
