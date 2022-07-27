@@ -1,3 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap");
+main {
+  font-family: "Outfit";
+}
+main p {
+  font-size: 18px;
+  font-weight: 300;
+}
+
 .container {
   background-color: hsl(217deg, 54%, 11%);
   display: flex;
@@ -7,19 +16,33 @@
   height: 100vh;
 }
 .container .card {
-  width: 300px;
-  height: 460px;
+  width: 320px;
+  height: 550px;
   background-color: hsl(216deg, 50%, 16%);
+  border-radius: 10px;
 }
-.container .card .image-equilibrium {
+.container .card .card-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
   height: 55%;
-  width: 90%;
-  padding-top: 10px;
-  align-self: center;
-  justify-self: center;
+  width: 100%;
+}
+.container .card .card-image .image-equilibrium {
+  height: 100%;
+  width: 86%;
+  border-radius: 10px;
+}
+.container .card .card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  line-height: 0.6cm;
 }
 .container .card .card-body .card-title {
   color: hsl(0deg, 0%, 100%);
+  font-weight: 600;
 }
 .container .card .card-body .card-text {
   color: hsl(215deg, 51%, 70%);
@@ -31,10 +54,30 @@
 }
 .container .card .card-body .price .eth {
   color: hsl(178deg, 100%, 50%);
+  font-weight: 400;
 }
 .container .card .card-body .price .days-left {
   color: hsl(215deg, 51%, 70%);
 }
-.container .card .card-footer {
+.container .card .card-body .dividing-line {
+  color: hsl(215deg, 32%, 27%);
+  margin: 0px 5px 10px 4px;
+}
+.container .card .card-body .nft-creator {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   color: hsl(215deg, 51%, 70%);
+}
+.container .card .card-body .nft-creator .image-avatar {
+  width: 30px;
+  border: solid white 1px;
+  border-radius: 50%;
+}
+.container .card .card-body .nft-creator .creator {
+  padding-left: 10px;
+  font-size: 15px;
+}
+.container .card .card-body .nft-creator .creator .creator-name {
+  color: hsl(0deg, 0%, 100%);
 }/*# sourceMappingURL=style.css.map */
