@@ -32,6 +32,7 @@ main{
         border-radius: 10px;
 
         .card-image{
+            position: relative;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -40,10 +41,25 @@ main{
             width: 100%;
 
             .image-equilibrium{
+                display: block;
                 height: 100%;
                 width: 86%;
                 border-radius: 10px;
             }
+
+            .overlay {
+                display: none;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                top: 20px;
+                left: 21px;
+                width: 87%;
+                height: 93%;
+                background-color: rgba(0,255,247, 0.5);
+                border-radius: 10px;
+            }
+
         }
 
         .card-body{
